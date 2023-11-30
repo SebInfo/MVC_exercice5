@@ -4,13 +4,12 @@ ob_start();
 ?>
 <article>
       <header>
-        <?= $unPompier['NomPompier'] ?>
-        <?= $unPompier['PrenomPompier'] ?>
-        <?= $unPompier['TelPompier'] ?>
-        <?= $unPompier['SexePompier'] ?>
-
+        <td><?= $unPompier->getNomPompier() ?></td>
+        <td><?= $unPompier->getPrenomPompier() ?></td>
+        <td><?= $unPompier->getTelPompier()?></td> 
+        <td><?= $unPompier->getSexePompier() ?></td> 
       </header>
 </article>
 <?php
 $content = ob_get_clean();
-require "templates/gabarit.php";
+require "layouts/gabarit.php";

@@ -1,6 +1,5 @@
 <?php
-require("Controller/controller.php");
-
+require("controllers/controller.php");
 try {
     if ( isset($_GET['action']) )
     {
@@ -22,4 +21,3 @@ catch (Exception $e){
     $msgErreur = $e->getMessage();
     erreur($msgErreur);
 }
-

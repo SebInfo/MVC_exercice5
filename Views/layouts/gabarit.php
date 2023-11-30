@@ -8,10 +8,8 @@
 </head>
 <body>
     <header>
-        <a href="index.php"><h1 class="display-1 text-bold">Cas DSC</h1></a>
+        <h1 class="display-1 text-bold"><?= $titre ?></h1>
     </header>
-    </header>
-    <h2 class="pb-2 border-bottom"><?= $titre ?></h2>
     <div id="contenu">
         <?= $content ?>
     </div>
